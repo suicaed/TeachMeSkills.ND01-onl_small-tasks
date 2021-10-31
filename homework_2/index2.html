@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 2.2</title>
+  <style>
+    .common_field {
+      display: flex;
+      justify-content: space-between;
+      max-width: 300px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="#" method="get">
+    <div class="common_field">
+      <label for="username">Ф.И.О.</label>
+      <input type="text" required id="username" placeholder="Иванов Иван Иванович">
+    </div>
+    <div class="common_field">
+      <label for="email">E-mail</label>
+      <input type="email" required id="email">
+    </div>
+    <div class="common_field">
+      <label for="password">Пароль</label>
+      <input type="password" required id="password" maxlength="10">
+    </div>
+    <div class="common_field">
+      <label for="password-repeat">Повтор пароля</label>
+      <input type="password" required id="password-repeat" maxlength="10">
+    </div>
+    <div>
+      <input type="checkbox" required id="accept_terms">
+      <label for="accept_terms">Я принимаю пользовательское соглашение</label>
+    </div>
+    <button style="margin-top: 12px;">Зарегистрироваться</button>
+  </form>
+</body>
+
+</html>
