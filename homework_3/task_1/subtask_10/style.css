@@ -1,0 +1,33 @@
+.lights__body {
+  position: relative;
+  height: 240px;
+  width: 80px;
+  margin: 20px auto;
+  border: 1px solid black;
+}
+
+.lights__circle {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.lights__circle--red {
+  top: 20px;
+  left: 10px;
+  background-color: red;
+}
+
+.lights__circle--yellow {
+  top: 90px;
+  left: 10px;
+  background-color: yellow;
+}
+
+.lights__circle--green {
+  top: 160px;
+  left: 10px;
+  background-color: green;
+}
