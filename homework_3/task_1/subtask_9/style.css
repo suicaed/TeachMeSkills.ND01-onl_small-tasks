@@ -1,0 +1,27 @@
+#outer {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 50px auto;
+  border-color: green;
+  border-width: 2px;
+  border-style: solid;
+  background-color: green;
+}
+
+#inner {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+}
+
+#inner:first-of-type {
+  top: 50px;
+  left: 50px;
+}
+
+#inner:last-of-type {
+  right: 50px;
+  bottom: 50px;
+}
