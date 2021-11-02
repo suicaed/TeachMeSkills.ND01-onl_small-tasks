@@ -1,0 +1,35 @@
+#root {
+  position: relative;
+}
+
+.block {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#first {
+  top: 50px;
+  left: 50px;
+  border-color: green;
+  background-color: green;
+  z-index: 40;
+}
+
+#second {
+  top: 85px;
+  left: 85px;
+  border-color: red;
+  background-color: red;
+  z-index: 20;
+}
+
+#third {
+  top: 120px;
+  left: 120px;
+  border-color: hotpink;
+  background-color: hotpink;
+  z-index: 40;
+}
