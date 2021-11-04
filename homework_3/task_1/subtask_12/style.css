@@ -1,0 +1,53 @@
+.head {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 100%;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.eye {
+  top: 70px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+.eye--left {
+  left: 100px;
+}
+.eye--right {
+  right: 100px;
+}
+
+.nose {
+  top: 200px;
+  left: 215px;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+}
+
+.mouth {
+  top: 325px;
+  left: 150px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+.mouth::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  background-color: #000000;
+}
+
+.bodypart--common {
+  position: absolute;
+  background-color: #FFFFFF;
+}
