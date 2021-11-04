@@ -1,0 +1,42 @@
+.head {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 100%;
+  background-color: #4DEE99;
+}
+
+.eye {
+  top: 70px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.eye--left {
+  left: 100px;
+}
+
+.eye--right {
+  right: 100px;
+}
+
+.nose {
+  top: 200px;
+  left: 215px;
+  height: 70px;
+  width: 70px;
+}
+
+.mouth {
+  top: 350px;
+  left: 150px;
+  height: 20px;
+  width: 200px;
+}
+
+.bodypart--common {
+  position: absolute;
+  background-color: #FFFFFF;
+}
