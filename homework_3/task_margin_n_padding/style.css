@@ -1,0 +1,117 @@
+html {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.block--common {
+  box-sizing: border-box;
+  padding: 5px;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+  width: 100%;
+  border-color: green;
+}
+
+.inner-block {
+  flex-grow: 1;
+  border-color: hotpink;
+}
+.inner-block:not(:first-child) {
+  margin-top: 5px;
+}
+
+.inner-block.first {
+  display: flex;
+  height: 100px;
+}
+.inner-block.second {
+  display: flex;
+  height: 150px;
+}
+.inner-block.third {
+  display: flex;
+  height: 50px;
+}
+
+.childblock {
+  flex-grow: 1;
+  border-color: indigo;
+}
+.inner-block.first > .childblock:not(:first-child) {
+  margin-left: 5px;
+}
+.childblock.third {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-childblock {
+  flex-grow: 1;
+  border-color: lightcoral;
+}
+
+.childblock.third > .inner-childblock:not(:first-child) {
+  margin-top: 5px;
+}
+
+.inner-block.second > .childblock:not(:first-child) {
+  margin-left: 5px;
+}
+
+.inner-block.third > .childblock:not(:first-child) {
+  margin-left: 5px;
+}
+.inner-block.third > .childblock.second {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.inner-block.third > .childblock.second > .inner-childblock:not(:first-child) {
+  margin-top: 5px;
+}
+.inner-block.third > .childblock.second > .inner-childblock.first {
+  flex-grow: 5;
+}
+.inner-block.third > .childblock.second > .inner-childblock.second {
+  flex-grow: 1;
+}
+
+.inner-block.fourth {
+  display: flex;
+}
+.inner-block.fourth > .childblock:not(:first-child) {
+  margin-left: 5px;
+}
+.inner-block.fourth > .childblock.first,
+.inner-block.fourth > .childblock.third {
+  flex-grow: 1;
+}
+.inner-block.fourth > .childblock.second {
+  flex-grow: 3;
+}
+
+.inner-block.fourth > .childblock.first {
+  display: flex;
+}
+
+.inner-block.fourth > .childblock.first > .inner-childblock {
+  flex-grow: 1;
+}
+
+.inner-block.fourth > .childblock.first > .inner-childblock:not(:first-child) {
+  margin-left: 5px;
+}
